@@ -1,0 +1,56 @@
+.hobbiesContainer{
+    width: 45%;
+}
+
+.hobbiesContainer > div{
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.hobbiesContainer > div:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.hobbies{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.hobby{
+    display: flex;   
+    gap: 1rem;
+}
+
+.hobbyIcon{
+    margin-top: 5px;
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 1024px){
+    .hobbiesContainer{
+        width: 75%;
+    }
+
+    .hobbies{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+}
+  
+@media screen and (max-width: 600px){
+    .hobbiesContainer{
+        width: 85%;
+    }
+
+    .hobbies{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+}

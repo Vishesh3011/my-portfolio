@@ -1,0 +1,76 @@
+.educationContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.education{
+    background: var(--color-bg-variant);
+    padding: 2.4rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.education:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.education > div{
+    margin-bottom: 2rem;
+}
+
+.educationHead{
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+    text-align: center;
+    /* border-bottom: 1px solid var(--color-white); */
+}
+
+.headTitle{
+    text-align: center;
+}
+
+.educationInfo{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-light);
+}
+
+.educationInfoFOS {
+    font-size: 11px;
+}
+
+.educationInfo > p{
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.educationQualificationDuration{
+    font-size: 12px;
+    color: var(--color-light);
+}
+
+.educationQualificationGrade{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: var(--color-light);
+}
+
+@media screen and (max-width: 1024px){
+    .educationContainer{
+        grid-template-columns: 1fr;
+    }
+}
+  
+@media screen and (max-width: 600px){
+    .educationContainer{
+        grid-template-columns: 1fr;
+    }
+}
+
+

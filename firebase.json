@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "build",
+    "site": "my-portfolio-811aa",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
